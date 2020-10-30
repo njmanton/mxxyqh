@@ -4,7 +4,7 @@
 const routes = app => {
 
   app.get('/', (req, res) => {
-    res.render('main', {});
+    res.render('pages/main', {});
   })
 
   app.get('/quiz/:round', (req, res) => {
