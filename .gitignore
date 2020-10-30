@@ -1,0 +1,10 @@
+node_modules
+assets/img
+assets/js/vendor
+assets/css/vendor
+logs/*.log
+*.sublime*
+TODO.md
+*.code-workspace
+.vscode
+.DS_Store

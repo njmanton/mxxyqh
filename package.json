@@ -1,0 +1,15 @@
+{
+  "name": "mxxyqh",
+  "version": "1.0.0",
+  "description": "My 20 Year Quiz Hell",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Nick Manton",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.1.0"
+  }
+}
