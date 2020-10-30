@@ -1,1 +1,28 @@
 @import url("https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap');
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+h3 {
+  text-align: center;
+  margin: 2em auto;
+}
+
+.source {
+  border: 1px solid black;
+  margin: 2px;
+  width: 18em;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+.destination {
+  padding: 2px;
+  margin: 2px;
+  border: 1px solid black;
+  min-height: 2em;
+  width: 20em;
+}

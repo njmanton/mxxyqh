@@ -1,8 +1,9 @@
 <div class="container-fluid">
-  <h3>Time Order</h3>
+  <h3>The Time of My Life</h3>
   <div class="row">
     <!-- Sources -->
     <div class="col">
+      <span>Drag from this column...</span>
       <div ondragstart="dragstart_handler(event);" data-period="1000 Days" ondragend="de_handler(event);" id="15" draggable="true" class="source">Anne of the ____</div>
       <div ondragstart="dragstart_handler(event);" data-period="3 Days" ondragend="de_handler(event);" id="8" draggable="true" class="source">____ of the Conder</div>
       <div ondragstart="dragstart_handler(event);" data-period="October" ondragend="de_handler(event);" id="12" draggable="true" class="source">The Hunt for Red ____</div>
@@ -27,6 +28,7 @@
 
     <!-- droppable divs -->
     <div id="drops" class="col">
+      <span>...to this one</span>
       <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="1" class="destination"></div>
       <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="2" class="destination"></div>
       <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="3" class="destination"></div>
@@ -49,26 +51,11 @@
       <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="20" class="destination"></div>
     </div> 
   </div>
+  <hr />
   <button onclick="checkScore();">Check</button>
   <button onclick="revealTimes();">Reveal</button>
-  <div><span id="score">0</span> / 20</div>  
+  <span id="score">0</span> / 20 
 </div>
-
-<style>
-  .source {
-    border: 1px solid black;
-    margin: 2px;
-    width: 18em;
-  }
-
-  .destination {
-    padding: 2px;
-    margin: 2px;
-    border: 1px solid black;
-    min-height: 2em;
-    width: 20em;
-  }
-</style>
 
 <script>
 function leave_handler(ev) {
@@ -90,7 +77,7 @@ function dragstart_handler(ev) {
 function over_handler(ev) {
  // Change the target element's border to signify a drag over event
  // has occurred
- ev.currentTarget.style.background = "#cccc88";
+ ev.currentTarget.style.background = "#81bef7";
  ev.preventDefault();
 }
 
@@ -119,11 +106,11 @@ function checkScore() {
     var item = $(this);
     var guess = item.children().length ? item.children()[0].id : 0;
     if (item.data('id') == guess) {
-      item.css('background-color', '#0f0');
+      item.css('background-color', '#bcf5a9');
       console.log('right');
       tally++;
     } else {
-      item.css('background-color', '#f00');
+      item.css('background-color', '#f5a9a9');
       console.log('wrong');
     }
   });
