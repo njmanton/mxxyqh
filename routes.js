@@ -11,9 +11,9 @@ const routes = app => {
     res.render('pages/quiz/inmemoriam', {});
   })
 
-  app.get('/:quiz/:round', (req, res) => {
-    res.render(`pages/${ req.params.quiz }/${ req.params.round }`, {});
-  })
+  // app.get('/:quiz/:round', (req, res) => {
+  //   res.render(`pages/${ req.params.quiz }/${ req.params.round }`, {});
+  // })
 
   // if no specific page, just use the default
   // app.get('/:quiz/', (req, res) => {
