@@ -7,8 +7,18 @@ const routes = app => {
     res.render('pages/main', {});
   })
 
-  app.get('/quiz/:round', (req, res) => {
-    res.render(`pages/${ req.params.round }`, {});
+  app.get('/:quiz/:round', (req, res) => {
+    res.render(`pages/${ req.params.quiz }/${ req.params.round }`, {});
+  })
+
+  // if no specific page, just use the default
+  // app.get('/:quiz/', (req, res) => {
+  //   res.render(`pages/${ req.params.quiz }`, {});
+  // })
+
+  // default route if nothing else matches
+  app.get('*', (req, res) => {
+    res.status(404).render('404', {});
   })
 
 }
