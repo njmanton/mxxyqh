@@ -4,11 +4,12 @@
 const routes = app => {
 
   app.get('/', (req, res) => {
-    res.render('pages/main', {});
+    res.render('pages/inmemoriam', {});
   })
 
   app.get('/quiz/inmemoriam', (req, res) => {
-    res.render('pages/quiz/inmemoriam', {});
+    console.log('mem');
+    res.render('pages/inmemoriam', {});
   })
 
   // app.get('/:quiz/:round', (req, res) => {
