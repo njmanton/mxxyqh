@@ -7,6 +7,10 @@ const routes = app => {
     res.render('pages/main', {});
   })
 
+  app.get('/quiz/inmemoriam', (req, res) => {
+    res.render('pages/quiz/inmemoriam', {});
+  })
+
   app.get('/:quiz/:round', (req, res) => {
     res.render(`pages/${ req.params.quiz }/${ req.params.round }`, {});
   })
