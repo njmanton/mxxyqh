@@ -1,0 +1,136 @@
+<div class="container-fluid">
+  <h3>Oscar Superlatives</h3>
+  <p>Match the Oscar superlative records (youngest nomnated director etc.) to the film for which the Oscar was won.</p>
+  <div class="row">
+    <!-- Sources -->
+    <div class="col">
+      <span>Drag from this column (Initials of film, and the length of time the record has been held)</span>
+      <div ondragstart="dragstart_handler(event);" data-period="S" ondragend="de_handler(event);" id="16" draggable="true" class="source">S (89y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="PM" ondragend="de_handler(event);" id="19" draggable="true" class="source">PM (46y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="PM" ondragend="de_handler(event);" id="20" draggable="true" class="source">PM (46y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="KVK" ondragend="de_handler(event);" id="8" draggable="true" class="source">KVK (40y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="OP" ondragend="de_handler(event);" id="7" draggable="true" class="source">OP (39y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="OGP" ondragend="de_handler(event);" id="13" draggable="true" class="source">OGP (38y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="APTI" ondragend="de_handler(event);" id="17" draggable="true" class="source">APTI (35y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="PH" ondragend="de_handler(event);" id="10" draggable="true" class="source">PH (34y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="COALG" ondragend="de_handler(event);" id="3" draggable="true" class="source">COALG (33y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="DMD" ondragend="de_handler(event);" id="1" draggable="true" class="source">DMD (30y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="BNTH" ondragend="de_handler(event);" id="12" draggable="true" class="source">BNTH (28y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="T" ondragend="de_handler(event);" id="18" draggable="true" class="source">T (22y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="TSS" ondragend="de_handler(event);" id="14" draggable="true" class="source">TSS (20y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="TP" ondragend="de_handler(event);" id="15" draggable="true" class="source">TP (17y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="MDB" ondragend="de_handler(event);" id="9" draggable="true" class="source">MDB (15y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="B" ondragend="de_handler(event);" id="5" draggable="true" class="source">B (8y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="BOTSW" ondragend="de_handler(event);" id="4" draggable="true" class="source">BOTSW (7y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="A" ondragend="de_handler(event);" id="2" draggable="true" class="source">A (7y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="LLL" ondragend="de_handler(event);" id="11" draggable="true" class="source">LLL (3y)</div>
+      <div ondragstart="dragstart_handler(event);" data-period="ATMITW" ondragend="de_handler(event);" id="6" draggable="true" class="source">ATMITW (2y)</div>
+    </div>
+
+    <!-- droppable divs -->
+    <div id="drops" class="col">
+      <span>...to the correct category</span>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="1" class="destination">Oldest Actress (Win)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="2" class="destination">Oldest Actress (Nom)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="3" class="destination">Youngest Actress (Win)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="4" class="destination">Youngest Actress (Nom)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="5" class="destination">Oldest Supporting Actor (Win)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="6" class="destination">Oldest Supporting Actor (Nom)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="7" class="destination">Youngest Supporting Actor (Win)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="8" class="destination">Youngest Supporting Actor (Nom)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="9" class="destination">Oldest Director (Win)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="10" class="destination">Oldest Director (Nom)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="11" class="destination">Youngest Director (Win)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="12" class="destination">Youngest Director (Nom)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="13" class="destination">Oldest Actor (Win)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="14" class="destination">Oldest Actor (Nom)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="15" class="destination">Youngest Actor (Win)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="16" class="destination">Youngest Actor ((Nom)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="17" class="destination">Oldest Supporting Actress (Win)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="18" class="destination">Oldest Supporting Actress (Nom)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="19" class="destination">Youngest Supporting Actress (Win)</div>
+      <div ondrop="drop_handler(event);" ondragleave="leave_handler(event);" ondragover="over_handler(event);" data-id="20" class="destination">Youngest Supporting Actress (Nom)</div>
+
+    </div> 
+  </div>
+  <hr />
+  <button onclick="checkScore();">Check</button>
+  <button onclick="revealTimes();">Reveal</button>
+  <span id="score">0</span> / 20 
+</div>
+
+<script>
+function leave_handler(ev) {
+  console.log('dragLeave');
+  ev.currentTarget.style.background = 'none';
+}
+
+function dragstart_handler(ev) {
+ console.log("dragStart");
+ var title = ev.currentTarget.getAttribute('data-period'); console.log(title);
+ // Add the id of the drag source element to the drag data payload so
+ // it is available when the drop event is fired
+ ev.dataTransfer.setData("order", ev.currentTarget.id);
+ ev.dataTransfer.setData("title", title);
+ console.log('set datatransfer to:', ev.dataTransfer.getData('title'));
+ // Tell the browser both copy and move are possible
+ ev.effectAllowed = "move";
+}
+
+function over_handler(ev) {
+ // Change the target element's border to signify a drag over event
+ // has occurred
+ ev.currentTarget.style.background = "#81bef7";
+ ev.preventDefault();
+}
+
+function drop_handler(ev) {
+  var order = ev.dataTransfer.getData("order");
+  var title = ev.dataTransfer.getData('title');
+    ev.preventDefault();
+  var dropped = document.getElementById(order);
+  if (ev.target.children.length == 0 && !ev.target.id) {
+    dropped.style.border = 'none';
+    dropped.textContent = title;
+    ev.target.appendChild(dropped);
+  } else {
+    console.log('drop disallowed');
+  }
+
+}
+
+function de_handler(ev) {
+  console.log("dragEnd");
+  // Remove all of the drag data
+  ev.dataTransfer.clearData();
+}
+
+function checkScore() {
+  var tally = 0;
+  $('.destination').each(function(i) {
+    var item = $(this);
+    var guess = item.children().length ? item.children()[0].id : 0;
+    if (item.data('id') == guess) {
+      item.css('background-color', '#bcf5a9');
+      console.log('right');
+      tally++;
+    } else {
+      item.css('background-color', '#f5a9a9');
+      console.log('wrong');
+    }
+  });
+  console.log('total', tally);
+  $('#score').text(tally);
+}
+
+function revealTimes() {
+  $('.source').each(function(i) {
+    var item = $(this),
+        clue = item.text(),
+        period = '<strong>' + item.data('period') + '</strong>';
+        console.log(period);
+    item.html(clue.replace(/____/, period));      
+  });
+}
+
+</script>
